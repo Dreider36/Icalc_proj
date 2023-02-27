@@ -6,7 +6,7 @@ Kinda stupid calculator in Iphone style on JavaScript
 Demonstrated ability:
 
 JS:
-1. Using mathematical operations correctly
+1. Using arithmetic operators correctly
 2. Building simple code logic
 3. Using anonymous functions
 4. Writing an event handler for a html-button
