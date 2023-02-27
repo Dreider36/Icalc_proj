@@ -10,7 +10,7 @@ JS:
 2. Building simple code logic
 3. Using anonymous functions
 4. Writing an event handler for a html-button
-5. Writing limits of numbers using toExponenta()
+5. Writing limits of numbers using `toExponenta()`
 
 CSS:
 1. Simple graphic effects from interaction with the button
