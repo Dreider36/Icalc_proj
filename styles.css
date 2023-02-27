@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.calculator {
+    margin: auto;
+    margin-top: 2em;
+    background-color: #000;
+    width: 20em;
+    height: 34em;
+    border-radius: 3%;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.answer {
+    height: 30%;
+    width: 100%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 70px;
+    text-align: end;
+    padding-right: 5%;
+    padding-top: 60px;
+}
+
+.buttons {
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+
+.button {
+    width: 65px;
+    height: 65px;
+    border: unset;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.button:active {
+    filter: brightness(90%);
+}
+
+.button-grey {
+    background-color: #dddddd;
+}
+
+.button-orange {
+    background-color: #ff922c;
+    color: #fff;
+}
+.button-darkgrey {
+    background-color: #464646;
+    color: #fff;
+}
+
+.button-wide {
+    width: 130px;
+    border-radius: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
