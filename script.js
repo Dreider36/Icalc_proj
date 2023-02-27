@@ -18,14 +18,21 @@ document.querySelector('.buttons').onclick = (event) => {
     if (digit.includes(key)) {
         if (b === '' && sign === '') {
             a += key;
-            answer.textContent = a;
+
+            if (Number(a) > 9999999) {
+                answer.textContent = Number(a).toExponential(1);
+            } else answer.textContent = Number(a); 
+
         } else if (finish) {
             b = key;
             finish = false;
             answer.textContent = b;
         } else {
             b += key;
-            answer.textContent = b;
+
+            if (Number(b) > 9999999) {
+                answer.textContent = Number(b).toExponential(1);
+            } else answer.textContent = Number(b); 
         }
         return;
     }
@@ -86,9 +93,8 @@ document.querySelector('.buttons').onclick = (event) => {
                 answer.textContent = 'Помилка';
             } else answer.textContent = a;  
 
-            a = Number(a);
-            if (a > 99999999) {
-                answer.textContent = a.toExponential(1);
-            } else answer.textContent = a;     
+        if (Number(a) > 9999999) {
+            answer.textContent = Number(a).toExponential(1);
+        } else answer.textContent = Number(a);     
     }
 }
